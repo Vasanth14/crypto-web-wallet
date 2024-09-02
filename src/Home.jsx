@@ -109,12 +109,12 @@ const Home = () => {
                                         <Form.Control value={mnemonic} placeholder="Your Seed Phrase" />
                                     </Form.Group>
                                     <Row className="mb-3">
-                                        <Form.Group as={Col} controlId="formGridEmail">
+                                        <Form.Group as={Col} className='col-12 col-lg-6' controlId="formGridEmail">
                                             <Form.Label>Password</Form.Label>
                                             <Form.Control value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Enter password" type="password" />
                                         </Form.Group>
 
-                                        <Form.Group as={Col} controlId="formGridPassword">
+                                        <Form.Group as={Col} className='col-12 col-lg-6 mt-3 mt-lg-0' controlId="formGridPassword">
                                             <Form.Label>Confirm Password</Form.Label>
                                             <Form.Control value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} placeholder="Confirm password" type="password" />
                                         </Form.Group>

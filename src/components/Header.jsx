@@ -15,11 +15,11 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#" className="contbtnlink">
-                <Button className='btn sitebtn'>Gihthub
+            <Nav.Link href="https://github.com/Vasanth14/" target="_blank" className="contbtnlink">
+                <Button className='btn sitebtn'>Github
                 </Button>
             </Nav.Link>
-            <Nav.Link href="#" className="contbtnlink">
+            <Nav.Link href="https://www.linkedin.com/in/vasanth-chandrasekar/" target="_blank" className="contbtnlink">
                 <Button className='btn sitebtn'>Linkedin
                 </Button>
             </Nav.Link>

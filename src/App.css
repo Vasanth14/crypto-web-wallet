@@ -20,6 +20,8 @@ section {
 }
 .navbar-brand {
   color: #f5f6f6;
+  font-weight: 700;
+  font-size: 24px;
 }
 .navbar-brand:hover {
   color: #f5f6f6;
@@ -35,7 +37,7 @@ section {
   background-color: #051726;
 }
 .navbar-toggler-icon {
-    background-image: url('../public/download.png');
+  background-image: url("../public/download.png");
 }
 .headbg .navbar-nav a {
   padding: 24px 22px;
@@ -119,8 +121,8 @@ section {
   position: relative;
 }
 .mobshow .xdevs {
-    position: unset !important;
-    display: none;
+  position: unset !important;
+  display: none;
 }
 .xdevs {
   position: absolute;
@@ -162,7 +164,9 @@ section {
 }
 
 .bannertitle h2 {
-  color: #f5f6f6;
+  -webkit-text-fill-color: #0000;
+  background: linear-gradient(to bottom right, #f7f7f7, #292727);
+  background-clip: text;
   font-size: 90px;
   font-weight: 700;
   line-height: 128px;
@@ -198,117 +202,166 @@ section {
 }
 
 .userpanelsection {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .formboxbg {
-    margin: 0 auto;
-    width: 100%;
-    min-width: 520px;
-    max-width: 900px;
-    border: 1px solid #057bdc1d;
-    background: #a1a1a105 !important;
-    padding: 32px;
-    border-radius: 32px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 520px;
+  max-width: 900px;
+  border: 1px solid #057bdc1d;
+  background: #a1a1a105 !important;
+  padding: 32px;
+  border-radius: 32px;
 }
-.formboxbg  .form-label {
-    color: #bcb9c1;
+.formboxbg .form-label {
+  color: #bcb9c1;
 }
 
-.table>:not(caption)>*>* {
-    background-color: transparent !important;
-    padding: 24px;
-    border: none !important;
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  padding: 24px;
+  border: none !important;
 }
 table thead tr {
-    border: none !important;
-    vertical-align: middle;
+  border: none !important;
+  vertical-align: middle;
 }
 table thead tr th {
-    color: #f5f6f6 !important;
+  color: #f5f6f6 !important;
 }
 table tr td {
-    color: #f5f6f6 !important;
+  color: #f5f6f6 !important;
 }
 table tbody {
-    border-top: 1px solid #057bdc1d;
+  border-top: 1px solid #057bdc1d;
 }
-.table-bordered>:not(caption)>* {
-    border: none !important;
+.table-bordered > :not(caption) > * {
+  border: none !important;
 }
 .impwallet .sitebtn {
-    color: #f5f6f6;
+  color: #f5f6f6;
 }
 
 input {
-    background-color: transparent !important;
-    border: 1px solid #22679f23 !important;
-    color: #f5f6f6 !important;
+  background-color: transparent !important;
+  border: 1px solid #22679f23 !important;
+  color: #f5f6f6 !important;
 }
 input::placeholder {
-    color: #f5f6f6 !important;
+  color: #f5f6f6 !important;
 }
 
-@media (max-width:1400px){
-    .bannertitle h2 {
-        font-size: 76px;
-        line-height: 100px;
-    }
+.modal-content {
+  background: #050707;
+  border: 1px solid #fff8f81f;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.modal-header .h4 {
+  color: #f5f5f5 !important;
+  font-size: 18px;
+}
+.modal-header {
+  border: none;
+}
+.modal-body .form-label {
+  color: #f5f6f6;
+}
+.btn-close {
+  --bs-btn-close-bg: none !important;
+  background-image: url('../public/closebtn.svg');
+  background-repeat: no-repeat;
+}
+.successimgbg {
+  text-align: center;
+}
+.successimg {
+  width: 100%;
+  max-width: 240px;
+}
+.keyimgbg {
+  text-align: center;
+}
+.keyimg {
+  width: 100%;
+  max-width: 180px;
+}
+.successtrx {
+  font-size: 24px;
+    -webkit-text-fill-color: #0000;
+    background: linear-gradient(to bottom right, #1c1f54, #55a987);
+    background-clip: text;
+    font-weight: 600;
+}
+.soladdr {
+  font-size: 16px;
+}
+@media (max-width: 1400px) {
+  .bannertitle h2 {
+    font-size: 76px;
+    line-height: 100px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .bannertitle h2 {
-        font-size: 62px;
-        line-height: 88px;
-    }
+  .bannertitle h2 {
+    font-size: 62px;
+    line-height: 88px;
+  }
 }
 
 @media (max-width: 991px) {
-    .bannertitle h2 {
-        font-size: 42px;
-        line-height: 82px;
-    }
-    .headbg .navbar-nav a {
-        padding: 16px 0px;
-        margin: 0px;
-    }
+  .bannertitle h2 {
+    font-size: 42px;
+    line-height: 82px;
+  }
+  .headbg .navbar-nav a {
+    padding: 16px 0px;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 767px) {
-    .xdevs {
-        font-size: 14px;
-        margin: 10px;
-        padding: 10px;
-    }
-    .bannertitle h2 {
-        font-size: 30px;
-        line-height: 63px;
-    }
-    .bannerbtns a:last-child {
-        margin-top: 20px;
-    }
+  .xdevs {
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .bannertitle h2 {
+    font-size: 30px;
+    line-height: 63px;
+  }
+  .bannerbtns a:last-child {
+    margin-top: 20px;
+  }
+  .formboxbg {
+    width: 100%;
+    min-width: unset !important;
+    max-width: unset !important;
+  }
 }
 
 @media (max-width: 600px) {
-    .xdevs {
-        display: none;
-    }
-    .mobshow .xdevs {
-        display: inline;
-        font-size: 18px;
-        margin: 14px;
-        padding: 14px;
-    }
-    .bannertitle h2 {
-        line-height: 48px;
-    }
+  .xdevs {
+    display: none;
+  }
+  .mobshow .xdevs {
+    display: inline;
+    font-size: 18px;
+    margin: 14px;
+    padding: 14px;
+  }
+  .bannertitle h2 {
+    line-height: 48px;
+  }
 }
 
 @media (max-width: 500px) {
-    .bannecontent p {
-        font-size: 14px;
-        margin-bottom: 0px;
-    }
+  .bannecontent p {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
 }
